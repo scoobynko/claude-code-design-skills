@@ -14,16 +14,18 @@ A Claude Code skill that generates production-ready React/Next.js code from Figm
 
 ## Prerequisites
 
-- Claude Code CLI installed
+- [Claude Code CLI](https://docs.claude.com/claude-code) or [Claude Desktop](https://claude.ai/download) installed
 - Figma MCP Server installed ([installation guide](https://developers.figma.com/docs/figma-mcp-server))
 - Figma Desktop app running
 - React/Next.js project (or compatible framework)
 
 ## Installation
 
-1. Clone or download this repository to your local machine
+**For Claude Code CLI:**
 
-2. Copy the `figma-to-code` directory to your Claude Code skills directory:
+1. Clone or download this repository
+
+2. Copy to your Claude Code skills directory:
    ```bash
    # macOS/Linux
    cp -r figma-to-code ~/.claude-code/skills/
@@ -52,6 +54,18 @@ A Claude Code skill that generates production-ready React/Next.js code from Figm
    **💡 Tip:** Use Claude Code to help! Ask: "Replace all placeholders in SKILL.md and examples.md with my project's implementation details"
 
 4. Restart Claude Code
+
+**For Claude Desktop:**
+
+1. Download or clone this repository
+
+2. Configure according to steps above
+
+3. Create a .zip file of the configured `figma-to-code` folder
+
+4. Open Claude Desktop app → **Settings** → **Capabilities** → **Skills** → **Upload skill**
+
+5. Select your `figma-to-code.zip` file and the skill will be validated and activated
 
 ## Usage
 
