@@ -14,7 +14,7 @@ A Claude Code skill that generates production-ready React/Next.js code from Figm
 
 ## Prerequisites
 
-- [Claude Code CLI](https://docs.claude.com/claude-code) or [Claude Desktop](https://claude.ai/download) installed
+- Claude Code ([Claude Code CLI](https://docs.claude.com/claude-code) or [Claude Desktop](https://claude.ai/download)) installed
 - Figma MCP Server installed ([installation guide](https://developers.figma.com/docs/figma-mcp-server))
 - Figma Desktop app running
 - React/Next.js project (or compatible framework)
@@ -56,6 +56,8 @@ A Claude Code skill that generates production-ready React/Next.js code from Figm
 4. Restart Claude Code
 
 **For Claude Desktop:**
+
+> **⚠️ Note:** Claude Desktop App may have limited capabilities in code creation compared to Claude Code CLI, as this skill is primarily tailored for Claude Code's development environment.
 
 1. Download or clone this repository
 
