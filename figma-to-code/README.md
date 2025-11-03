@@ -69,6 +69,24 @@ A Claude Code skill that generates production-ready React/Next.js code from Figm
 
 5. Select your `figma-to-code.zip` file and the skill will be validated and activated
 
+## Configuration
+
+### MCP Output Limits
+
+When working with Figma designs, you may encounter MCP output limit warnings as the Figma MCP server can return large amounts of data (design metadata, screenshots, variables).
+
+By default, Claude Code shows a warning when MCP tool output exceeds **10,000 tokens**, with a maximum limit of **25,000 tokens**.
+
+If you encounter output warnings or limits, increase the maximum using the `MAX_MCP_OUTPUT_TOKENS` environment variable:
+
+```bash
+# Set higher limit before starting Claude Code
+export MAX_MCP_OUTPUT_TOKENS=50000
+claude
+```
+
+For more details, see the [MCP output limits documentation](https://docs.claude.com/en/docs/claude-code/mcp#mcp-output-limits-and-warnings).
+
 ## Usage
 
 Provide a Figma design link to Claude Code (e.g., "Generate code from this Figma design: [figma-link]").
