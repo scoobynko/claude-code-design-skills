@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.1] - 2025-11-07
+
+### Removed
+- Component description validation from Figma to Code skill (get_design_context tool cannot read component descriptions)
+
 ## [0.2.0] - 2025-11-07
 
 ### Changed
@@ -7,6 +12,7 @@
 
 ### Added
 - CHANGELOG.md to track project changes
+- Automated release workflow via GitHub Actions
 
 ## [0.1.0] - 2025-11-03
 
