@@ -22,12 +22,14 @@ jobs:
         run: |
           VERSION="${{ steps.version.outputs.VERSION }}"
           # Extract the section for this version from CHANGELOG.md
-          awk "/## \[${VERSION}\]/,/## \[/" CHANGELOG.md | sed '/## \['"${VERSION}"'\]/d; /## \[/d' > release_notes.md
+          sed -n "/## \[${VERSION}\]/,/^## \[/p" CHANGELOG.md | sed '1d;$d' > release_notes.md
+          echo "Release notes for v${VERSION}:"
+          cat release_notes.md
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          name: Release v${{ steps.version.outputs.VERSION }}
+          name: v${{ steps.version.outputs.VERSION }}
           body_path: release_notes.md
           draft: false
           prerelease: false
