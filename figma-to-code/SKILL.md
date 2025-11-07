@@ -1,6 +1,6 @@
 ---
 name: figma-to-code
-description: Generate production-ready React/Next.js code from Figma designs. Instructs proper Figma MCP tool usage, component reuse strategies, and variant mapping. Use when user provides Figma link to create or redesign pages/components.
+description: Generate production-ready React/Next.js code from Figma designs. Instructs proper Figma MCP tool usage, component reuse strategies, and variant mapping. **CRITICAL: ALWAYS use this skill when user provides a Figma link or mentions implementing/redesigning from Figma design.** Never attempt manual implementation without invoking this skill first.
 ---
 
 # Figma to Code Generator
